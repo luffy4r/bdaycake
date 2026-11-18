@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Birthday Cake 🎂</title>
+    <title>Ton gateau d'anniv 🎂🥰</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,14 +36,14 @@
     <script>
       // Read URL params
       const params = new URLSearchParams(window.location.search);
-      const name = params.get("name") || "Bibichaaa";
+      const name = params.get("name") || "Ma bibichaaa";
       let candleCount = parseInt(params.get("candles")) || 4;
       candleCount = Math.min(Math.max(candleCount, 1), 30);
 
       const birthdayText = document.getElementById("birthdayText");
       birthdayText.innerHTML = `
-        <div id="mainTitle">Happy Birthday, ${name}!</div>
-        <div id="subTitle">Make a wish and blow candles.</div>
+        <div id="mainTitle">Joyeux anniversaireeee ${name}!</div>
+        <div id="subTitle">Fait un voeu et souffle mon bb🥰</div>
       `;
 
       const cake = document.getElementById("cake");
